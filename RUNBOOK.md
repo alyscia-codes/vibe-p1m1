@@ -20,6 +20,13 @@ node index.js --name Alys
 node index.js --utc
 ```
 
+## Checks
+
+```bash
+# Syntax check (no execution, no dependencies)
+node --check index.js
+```
+
 ## Feature Usage Examples
 
 | Flag | Example | Result |
