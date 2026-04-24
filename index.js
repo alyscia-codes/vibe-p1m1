@@ -1,7 +1,6 @@
 // Claude API Sandbox — Entry Point
 
 const title = "Claude API Sandbox";
-const now = new Date().toLocaleString();
 
 const nameIndex = process.argv.indexOf("--name");
 let name = null;
@@ -13,6 +12,9 @@ if (nameIndex !== -1) {
   }
   name = value;
 }
+
+const utc = process.argv.includes("--utc");
+const now = utc ? new Date().toISOString() : new Date().toLocaleString();
 
 console.log("=============================");
 console.log(`  ${title}`);
