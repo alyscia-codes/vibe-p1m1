@@ -10,3 +10,7 @@ node index.js --name Alys  # prints "Hello, Alys!" before the OK line
 ```
 
 Safe-default rule: never hardcode API keys — always load them from environment variables via a `.env` file that is listed in `.gitignore`.
+
+## License
+
+MIT
